@@ -4,10 +4,25 @@
   box-sizing: border-box;
 }
 
-input {
+body {
+  background-color: antiquewhite;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+
+.input {
   border-radius: 5px;
   width: 200px;
-  height: 30px;
+  height: 35px;
+}
+
+.button {
+  width: 200px;
+  height: 35px;
+  border-radius: 7px;
 }
 
 .container {
@@ -24,9 +39,9 @@ input {
 }
 
 .sketch:hover {
-  background-color: aqua;
+  background-color: rgb(230, 155, 44);
 }
 
 .hovered {
-  background-color: aqua;
+  background-color: rgb(230, 155, 44);
 }
