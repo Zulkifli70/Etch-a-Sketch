@@ -1,22 +1,25 @@
 *,
 *::after,
 *::before {
-  box-sizing: content-box;
+  box-sizing: border-box;
 }
 
 .container {
-  margin: 0;
-  padding: 0;
-  border: 1px solid;
-  width: 920px;
-  height: 500px;
+  outline: 1px solid;
+  width: 960px;
+  height: 960px;
   display: flex;
   flex-wrap: wrap;
 }
 
 .sketch {
-  min-width: 10%;
-  flex: 1;
   border: 1px solid;
+}
+
+.sketch:hover {
+  background-color: aqua;
+}
+
+.hovered {
   background-color: aqua;
 }

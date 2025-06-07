@@ -3,11 +3,19 @@ container.setAttribute("class", "container");
 
 const sketch = document.createElement("div");
 sketch.setAttribute("class", "sketch");
-const total = 30;
-container.appendChild(sketch);
 
+const input = prompt("Input number between 1-100");
+const total = input * input;
+const sketchSize = 960 / input;
 for (let i = 1; i <= total; i++) {
-  const clone = sketch.cloneNode(true);
-  clone.id = "sketch-" + i;
-  container.appendChild(clone);
+  const sketch = document.createElement("div");
+  sketch.setAttribute("class", "sketch");
+
+  sketch.style.width = `${sketchSize}px`;
+  sketch.style.height = `${sketchSize}px`;
+
+  sketch.addEventListener("mouseenter", () => {
+    sketch.classList.add("hovered");
+  });
+  container.appendChild(sketch);
 }
