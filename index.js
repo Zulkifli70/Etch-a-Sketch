@@ -6,7 +6,7 @@ container.setAttribute("class", "container");
 
 function createGrid(size) {
   container.innerHTML = "";
-  const sketchSize = 960 / size;
+  const sketchSize = 480 / size;
   for (let i = 1; i <= size * size; i++) {
     const sketch = document.createElement("div");
     sketch.setAttribute("class", "sketch");
